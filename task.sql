@@ -1,7 +1,7 @@
-CREATE USER 'webappuser'@'localhost' IDENTIFIED BY 'P@ssw0rd';
-GRANT SELECT, INSERT, UPDATE, DELETE ON ShopDB.* TO 'webappuser'@'localhost';
+CREATE USER IF NOT EXISTS 'webappuser'@'%' IDENTIFIED BY 'P@ssw0rd';
+GRANT SELECT, INSERT, UPDATE, DELETE ON ShopDB.* TO 'webappuser'@'%';
 
-CREATE USER 'deploymentuser'@'localhost' IDENTIFIED BY 'P@ssw0rd';
-GRANT ALL PRIVILEGES ON ShopDB.* TO 'deploymentuser'@'localhost';
+CREATE USER IF NOT EXISTS 'deploymentuser'@'%' IDENTIFIED BY 'P@ssw0rd';
+GRANT ALL PRIVILEGES ON ShopDB.* TO 'deploymentuser'@'%';
 
 FLUSH PRIVILEGES;
