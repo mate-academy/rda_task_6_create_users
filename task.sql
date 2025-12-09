@@ -2,10 +2,10 @@
 
 CREATE USER 'webappuser'@'%' IDENTIFIED BY 'P@ssw0rd'
 
-GRANT INSERT, UPDATE, DELETE, SELECT ON ShopDB.*. TO 'webappuser'@'%';
+GRANT INSERT, UPDATE, DELETE, SELECT ON ShopDB.* TO 'webappuser'@'%';
 
 CREATE USER 'deploymentuser'@'%' IDENTIFIED BY 'P@ssw0rd'
 
-GRANT ALL PRIVILEGES ON ShopDB.*. TO 'deploymentuser'@'%'
+GRANT ALL PRIVILEGES ON ShopDB.* TO 'deploymentuser'@'%'
 
 
