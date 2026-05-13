@@ -1,15 +1,15 @@
-CREATE USER 'webappuser'@'localhost'
+CREATE USER 'webappuser'@'%'
 IDENTIFIED BY 'P@ssw0rd';
 
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON ShopDB.*
-TO 'webappuser'@'localhost';
+TO 'webappuser'@'%';
 
-CREATE USER 'deploymentuser'@'localhost'
+CREATE USER 'deploymentuser'@'%'
 IDENTIFIED BY 'P@ssw0rd';
 
 GRANT ALL PRIVILEGES
 ON ShopDB.*
-TO 'deploymentuser'@'localhost';
+TO 'deploymentuser'@'%';
 
 FLUSH PRIVILEGES;
