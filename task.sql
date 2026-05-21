@@ -3,7 +3,3 @@ CREATE USER 'deploymentuser'@'%' IDENTIFIED BY 'P@ssw0rd';
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON ShopDB.* TO 'webappuser'@'%';
 GRANT ALL PRIVILEGES ON ShopDB.* TO 'deploymentuser'@'%';
-
-DROP USER 'webappuser'@'%';
-DROP USER 'deploymentuser'@'%';
-FLUSH PRIVILEGES;
