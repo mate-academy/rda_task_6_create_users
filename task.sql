@@ -1,6 +1,6 @@
 -- write your code for database user creation here
 
-SELECT ShopDB;
+USE ShopDB;
 
 CREATE USER 'webappuser'@'%' IDENTIFIED by 'P@ssw0rd'
 
