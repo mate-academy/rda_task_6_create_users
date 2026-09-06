@@ -423,4 +423,8 @@
       </generator-filters>
     </mybatis-settings>
   </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
+    <execution-variable-types />
+  </component>
 </project>
